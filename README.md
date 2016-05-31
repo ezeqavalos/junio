@@ -1,2 +1,7 @@
-# Website
-Código del tema de WordPress para la página web.
+# Junio
+
+> Tema para WordPress del la página principal de Somos Uno.
+
+Licencia
+----
+MIT
