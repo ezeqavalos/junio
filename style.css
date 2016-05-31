@@ -1,0 +1,26 @@
+/*
+Theme Name: Junio
+Theme URI: https://github.com/Somos-Uno/Junio
+Author: el equipo Somos Uno
+Author URI: https://github.com/Somos-Uno
+Description: Un tema elgante y limpio para la página web.
+Version: 0.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Tags: black, blue, gray, white, yellow, light, two-columns, left-sidebar, fixed-layout, responsive-layout.
+Text Domain: junio
+*/
+
+.very-top-header {
+	background-color: #0098DA;
+	color: #fff;
+	padding-top: 10px;
+	font-size: 17px;
+}
+.very-top-header p em {
+	font-size: 18px;
+}
+.very-top-header a {
+	color: #fff;
+	text-decoration: none;
+}
