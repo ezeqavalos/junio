@@ -11,6 +11,9 @@ Tags: black, blue, gray, white, yellow, light, two-columns, left-sidebar, fixed-
 Text Domain: junio
 */
 
+.logo {
+	margin: 0;
+}
 .very-top-header {
 	background-color: #0098DA;
 	color: #fff;
