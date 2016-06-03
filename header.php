@@ -25,7 +25,7 @@
 
 <body>
 
-	<header role="banner">
+	<header class="header-junio clearfix" role="banner">
 		<div class="very-top-header">
 			<div class="container">
 				<div class="row">

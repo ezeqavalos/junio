@@ -28,8 +28,85 @@ a {
 	        transition: all 0.2s ease-in-out;
 }
 
-.logo {
-	margin: 0;
+/**
+ * Headings
+ */
+
+h1,
+h2 {
+	font-family: 'Cabin', Helvetica Neue, Sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 40px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 34px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 28px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 18px;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+ h1.intro {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    text-align: center;
+    background: #0A6F9A;
+}
+
+h1.single-title {
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #000;
+	margin-top: 0;
+}
+
+h1.page-title {
+	margin-top: 0;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5 {
+	margin-top: 35px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+/**
+ * Header
+ */
+.header-junio {
+	margin-bottom: 20px;
 }
 
 .very-top-header {
@@ -51,10 +128,13 @@ a {
 	text-decoration: none;
 }
 
-.container {
-	padding-right: 0px;
-	padding-left: 0px;
+.navbar-header h1 {
+	margin: 0;
 }
+
+/**
+ * Container
+ */
 
 .wrapper {
 	min-height: 100%;
@@ -65,7 +145,7 @@ a {
 }
 
 /**
- * .navbar-junio
+ * Nav
  */
 
 .navbar-junio {
@@ -95,7 +175,7 @@ a {
 }
 
 /**
- * .footer-junio
+ * Footer
  */
 
 .footer-junio {
@@ -120,4 +200,16 @@ a {
 .footer-junio .copyright p {
 	color: #DBDBDB;
 	font-size: 13px;
+}
+
+/**
+ * .entry-*
+ */
+.entry-content,
+.entry-content p,
+.entry-content span {
+	font-weight: 400;
+	color: #666;
+	font-size: 16px;
+	line-height: 26px;
 }
