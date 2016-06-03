@@ -9,8 +9,8 @@
 ?><!DOCTYPE html>
 <html lang="es-AR">
 <head>
-	<title>Somos Uno</title>
-	<meta name='description' content='Organización sin fines de lucro integrada por jóvenes estudiantes y trabajadores'>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<meta name='description' content='<?php echo get_bloginfo( 'description' ); ?>'>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <em>03731 51-6903</em></p>
+						<p>Contacta con nosotros: <em>03731 51-6903</em></p>
 					</div>
 
 					<div class="col-md-6 text-right">
@@ -40,23 +40,21 @@
 			</div><!-- .container -->
 		</div><!-- .very-top-header -->
 
-		<nav class="navbar navbar-default" role="navigation">
+		<nav class="navbar navbar-junio" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
 					<h1 class="logo"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .navbar-header -->
 
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Novedades</a></li>
-						<li><a href="#">Quiero ser voluntario</a></li>
-						<li><a href="#">Contactar</a></li>
-						<li><a href="#">Perchero Solidario</a></li>
-					</ul>
+				<div class="collapse navbar-collapse">
+					<?php wp_nav_menu( array(
+						'container'      => 'ul',
+						'menu_class'     => 'nav navbar-nav navbar-right',
+						'theme_location' => 'primary'
+					) ); ?>
 				</div><!-- .collapse -->
 			</div><!-- .container -->
 		</nav>
 	</header>
 
-	<div class="container">
+	<div class="wrapper">

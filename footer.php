@@ -7,27 +7,25 @@
  * @since Junio 0.0.0
  */
 ?>
-		<footer role="contentinfo" class="text-center">
+	</div><!-- .wrapper -->
+
+	<footer role="contentinfo" class="footer-junio text-center">
+		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<ul class="list-inline">
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Novedades</a></li>
-						<li><a href="#">Quiero ser voluntario</a></li>
-						<li><a href="#">Contactar</a></li>
-						<li><a href="#">Perchero Solidario</a></li>
-					</ul>
+					<?php wp_nav_menu( array(
+						'container'      => 'ul',
+						'menu_class'     => 'list-inline',
+						'theme_location' => 'secondary'
+					) ); ?>
 				</div>
-
-				<hr />
 				
-				<div class="col-md-12">
-					<p class="copyright">&copy; <?php echo date('Y'); ?> Somos Uno. Todos los derechos reservados.</p>
+				<div class="copyright col-md-12">
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. Todos los derechos reservados.</p>
 				</div>
 			</div><!-- .row -->
-		</footer>
-
-	</div><!-- .container -->
+		</div><!-- .container -->
+	</footer>
 
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery-1.12.4.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.js"></script>
