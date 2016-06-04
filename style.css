@@ -48,6 +48,11 @@ a:focus {
 /**
  * 6.2 Menus
  */
+
+.navbar-junio {
+	border-radius: 0;
+	border: none;
+}
 .navbar-junio li a {
 	color: #313131;
     text-transform: uppercase;
@@ -88,7 +93,7 @@ a:focus {
 .navbar-junio .current-menu-item > a,
 .navbar-junio .current-menu-ancestor > a {
 	color: #0d3c55;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .navbar-junio .nav > ul > li:first-child,
