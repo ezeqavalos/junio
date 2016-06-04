@@ -32,12 +32,12 @@ body {
 
 a {
 	color: #333;
-	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: #707070;
+	color: #f16c20;
+	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in-out;
 	   -moz-transition: all 0.2s ease-in-out;
 	    -ms-transition: all 0.2s ease-in-out;
@@ -87,6 +87,7 @@ a:focus {
 
 .navbar-junio .current-menu-item > a,
 .navbar-junio .current-menu-ancestor > a {
+	color: #0d3c55;
 	font-weight: 700;
 }
 
@@ -238,6 +239,11 @@ h1.page-title {
 	width: auto;
 }
 
+.footer-junio li {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
 .footer-junio li a {
 	color: #fff;
 }
@@ -248,7 +254,7 @@ h1.page-title {
 }
 
 .footer-junio .powered-by {
-	margin-top: 35px;
+	margin-top: 15px;
 }
 
 .footer-junio .powered-by p {
@@ -305,10 +311,11 @@ h1.page-title {
 }
 
 .partners h3 {
-	color: #333;
+	color: #0d3c55;
 	font-family: 'Cabin', Helvetica Neue, Sans-serif;
-	font-size: 24px;
+	font-size: 32px;
 	font-weight: 600;
+	margin-bottom: 20px;
 }
 
 .partners li {
