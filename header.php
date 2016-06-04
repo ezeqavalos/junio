@@ -58,4 +58,4 @@
 	</header>
 
 	<div class="wrapper">
-	
+		<div class="container-fluid">

@@ -7,6 +7,7 @@
  * @since Junio 0.0.0
  */
 ?>
+</div>
 	</div><!-- .wrapper -->
 
 	<footer role="contentinfo" class="footer-junio text-center">
@@ -21,7 +22,7 @@
 				</div>
 				
 				<div class="copyright col-md-12">
-					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. Todos los derechos reservados.</p>
+					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. <?php _e( 'Todos los derechos reservados.', 'junio' ); ?></p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
