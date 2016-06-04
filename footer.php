@@ -21,7 +21,7 @@
 				</div>
 				
 				<div class="copyright col-md-12">
-					<p>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. <?php _e( 'Todos los derechos reservados.', 'junio' ); ?></p>
+					<p>Desarrollado con <span title="Amor">&#10084;</span> por el equipo Somos Uno.</p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
