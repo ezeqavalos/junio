@@ -30,11 +30,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<p>Contacta con nosotros: <em>03731 51-6903</em></p>
+						<p><?php _e( 'Contáctanos al', 'junio' ); ?> <em>03731-51-6903</em></p>
 					</div>
 
 					<div class="col-md-6 text-right">
-						<a href="https://www.facebook.com/redsomosuno" rel="new-window" target="_blank">Síganos en Facebook <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
+						<a href="https://www.facebook.com/redsomosuno" rel="new-window" target="_blank"><?php _e( 'Síganos en Facebook', 'junio' ); ?> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->

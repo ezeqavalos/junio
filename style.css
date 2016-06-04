@@ -105,6 +105,7 @@ h1.page-title {
 /**
  * Header
  */
+
 .header-junio {
 	margin-bottom: 20px;
 }
@@ -117,8 +118,8 @@ h1.page-title {
 }
 
 .very-top-header p em {
-	font-size: 23px;
-	margin-top: -4px;
+	font-size: 22px;
+	margin-top: -5px;
 	margin-left: 5px;
 	position: absolute;
 }
