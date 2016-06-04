@@ -13,11 +13,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<?php wp_nav_menu( array(
+
+					<?php
+					wp_nav_menu( array(
 						'container'      => 'ul',
 						'menu_class'     => 'list-inline',
 						'theme_location' => 'secondary'
-					) ); ?>
+					) );
+					?>
+					
 				</div>
 				
 				<div class="copyright col-md-12">

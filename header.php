@@ -9,7 +9,7 @@
 ?><!DOCTYPE html>
 <html lang="es-AR">
 <head>
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title( '-', true, 'right' ); ?></title>
 	<meta name='description' content='<?php echo get_bloginfo( 'description' ); ?>'>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,11 +48,15 @@
 				</div><!-- .navbar-header -->
 
 				<div class="collapse navbar-collapse">
-					<?php wp_nav_menu( array(
+				
+					<?php
+					wp_nav_menu( array(
 						'container'      => 'ul',
 						'menu_class'     => 'nav navbar-nav navbar-right',
 						'theme_location' => 'primary'
-					) ); ?>
+					) );
+					?>
+
 				</div><!-- .collapse -->
 			</div><!-- .container -->
 		</nav>

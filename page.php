@@ -24,7 +24,7 @@ get_header(); ?>
 			endwhile;
 			?>
 
-			</main><!-- .site-main -->
+			</main>
 
 			<div class="col-md-4">
 
