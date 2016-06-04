@@ -19,6 +19,26 @@ endif; // junio_setup
 add_action( 'after_setup_theme', 'junio_setup' );
 
 /**
+ * Register área de widget.
+ *
+ * @since Junio 0.0
+ *
+ * @link https://codex.wordpress.org/Function_Reference/register_sidebar
+ */
+function junio_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Área Widget', 'junio' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Añadir widgets aquí para aparecer en la barra lateral.', 'junio' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'junio_widgets_init' );
+
+/**
  * Crear un texto elemento de título con un formato agradable y más específica para la salida
  * en la cabeza del documento, basado en la vista actual.
  *

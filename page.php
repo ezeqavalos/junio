@@ -10,20 +10,29 @@
 get_header(); ?>
 
 	<div class="container">
-		<main role="main">
+		<div class="row">
+			<main class="col-md-8" role="main">
 
-		<?php
-		// Iniciar el bucle.
-		while ( have_posts() ) : the_post();
+			<?php
+			// Iniciar el bucle.
+			while ( have_posts() ) : the_post();
 
-			// Incluya la plantilla de contenido de la página.
-			get_template_part( 'content', 'page' );
+				// Incluya la plantilla de contenido de la página.
+				get_template_part( 'content', 'page' );
 
-		// Terminar el bucle.
-		endwhile;
-		?>
+			// Terminar el bucle.
+			endwhile;
+			?>
 
-		</main><!-- .site-main -->
+			</main><!-- .site-main -->
+
+			<div class="col-md-4">
+
+				<?php get_sidebar(); ?>
+
+			</div>
+		</div><!-- .row -->
 	</div><!-- .container -->
 
-<?php get_footer();
+<?php
+get_footer();

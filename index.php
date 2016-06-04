@@ -19,5 +19,6 @@ get_header(); ?>
 			</div>
 		</div><!-- .row -->
 	</div><!-- .container -->
+	
 <?php
 get_footer();
