@@ -24,7 +24,7 @@
 					
 				</div>
 				
-				<div class="copyright col-md-12">
+				<div class="powered-by col-md-12">
 					<p>Desarrollado con <span title="Amor">&#10084;</span> por el equipo Somos Uno.</p>
 				</div>
 			</div><!-- .row -->

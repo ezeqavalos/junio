@@ -247,15 +247,15 @@ h1.page-title {
 	text-decoration: none;
 }
 
-.footer-junio .copyright {
+.footer-junio .powered-by {
 	margin-top: 35px;
 }
 
-.footer-junio .copyright p {
+.footer-junio .powered-by p {
 	color: #DBDBDB;
 	font-size: 13px;
 }
-.footer-junio .copyright p span {
+.footer-junio .powered-by p span {
 	color: #e74c3c;
 	font-size: 16px;
 }
@@ -285,4 +285,58 @@ h1.page-title {
 
 .widget {
 	margin-bottom: 40px;
+}
+
+
+/**
+ * Inicio
+ */
+
+/** .articles */
+.articles {
+	margin-bottom: 40px;
+}
+
+/** .Partners  */
+.partners {
+	margin-bottom: 40px;
+	z-index: 1;
+	text-align: center;
+}
+
+.partners h3 {
+	color: #333;
+	font-family: 'Cabin', Helvetica Neue, Sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.partners li {
+	display: inline-block;
+	margin: 25px 25px 25px 25px;
+	vertical-align: middle;
+}
+
+.partners li a {
+	display: block;
+	padding: 5px;
+}
+
+.partners li img {
+	max-height: 40px;
+	opacity: 0.6;
+	-webkit-filter: grayscale(1);
+	   -moz-filter: grayscale(1);
+	    -ms-filter: grayscale(1);
+	     -o-filter: grayscale(1);
+	        filter: grayscale(1);
+}
+
+.partners li img:hover {
+	opacity: 1;
+	-webkit-filter: initial;
+	   -moz-filter: initial;
+	    -ms-filter: initial;
+	     -o-filter: initial;
+	        filter: initial;
 }
