@@ -31,7 +31,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<p><?php _e( 'Contáctanos al', 'junio' ); ?> <em>03731-51-6903</em></p>
+						<p><?php _e( 'Contáctanos al', 'junio' ); ?> <em>3731-516903</em></p>
 					</div>
 
 					<div class="col-md-6 text-right">
