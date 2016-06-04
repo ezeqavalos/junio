@@ -16,9 +16,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<link rel="alternate" type="application/rss+xml" href="<?php echo esc_url( home_url( '/feed/' ) ); ?>">
 	<link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/favicon.ico" type="image/x-icon">
-	<link href='https://fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:400,600'>
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
 </head>
@@ -58,4 +59,3 @@
 	</header>
 
 	<div class="wrapper">
-		<div class="container-fluid">

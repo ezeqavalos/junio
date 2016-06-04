@@ -7,7 +7,6 @@
  * @since Junio 0.0.0
  */
 ?>
-</div>
 	</div><!-- .wrapper -->
 
 	<footer role="contentinfo" class="footer-junio text-center">
