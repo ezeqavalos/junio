@@ -75,3 +75,35 @@ function junio_wp_title( $title, $sep ) {
 	return $title;
 }
 add_filter( 'wp_title', 'junio_wp_title', 10, 2 );
+
+
+function the_breadcrumb() {
+	$txtHome = 'Inicio';
+
+	if (is_home() || is_404() || !have_posts())
+		return;
+	
+	echo '<ol class="breadcrumb">';
+	if (!is_home()) {
+			echo '<li><a href="';
+			echo get_option('home');
+			echo '">';
+			/*echo '<span class="glyphicon glyphicon-home" aria-hidden="true"></span>';*/
+			echo ' '.$txtHome;
+			echo "</a></li>";
+			if (is_category() || is_single()) {
+					echo '<li>';
+					the_category(' </li><li> ');
+					if (is_single()) {
+							echo "</li><li>";
+							the_title();
+							echo '</li>';
+					}
+			} elseif (is_page()) {
+					echo '<li>';
+					echo the_title();
+					echo '</li>';
+			}
+	}
+	echo '</ol>';
+}

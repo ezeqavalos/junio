@@ -28,14 +28,14 @@
 <body>
 
 	<header class="header-junio clearfix" role="banner">
-		<div class="very-top-header">
+		<div class="very-top-header ">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-9">
 						<p><?php _e( 'Contáctanos al', 'junio' ); ?> <em>3731-516903</em></p>
 					</div>
 
-					<div class="col-md-6 text-right">
+					<div class="col-md-3 text-right">
 						<a href="https://www.facebook.com/redsomosuno" rel="new-window" target="_blank"><?php _e( 'Síganos en Facebook', 'junio' ); ?> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
 					</div>
 				</div><!-- .row -->
@@ -45,6 +45,12 @@
 		<nav class="navbar navbar-junio" role="navigation">
 			<div class="container cbp-af-inner">
 				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .navbar-header -->
 
@@ -64,3 +70,11 @@
 	</header>
 
 	<div class="wrapper">
+
+	<?php
+	if (!is_home()) :
+	?>
+	<div class="container">
+	<?php the_breadcrumb(); ?>
+	</div>
+	<?php endif; ?>

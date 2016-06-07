@@ -42,8 +42,10 @@ get_header(); ?>
 		</div><!-- .objectives -->
 		
 		<div class="sumate text-center">
-			<span>Actualmente somos más de <strong>50</strong> voluntarios. <em><?php _e( '¿Quieres formar parte?', 'junio' ); ?></em> <a href="http://bit.ly/SumateComoVoluntario" target="_blank">Sumate <i class="fa fa-arrow-right" aria-hidden="true"></i></a></span>
-		</div>
+			<div class="container">
+				<span>Actualmente somos más de <strong>50</strong> voluntarios. <em><?php _e( '¿Quieres formar parte?', 'junio' ); ?></em> <a href="http://bit.ly/SumateComoVoluntario" target="_blank">Sumate <i class="fa fa-arrow-right" aria-hidden="true"></i></a></span>
+			</div><!-- .container -->
+		</div><!-- .sumate -->
 	</section><!-- .about-us-->
 	
 	<section class="container articles">

@@ -11,24 +11,19 @@
 
 	<footer role="contentinfo" class="footer-junio text-center">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
 
-					<?php
-					wp_nav_menu( array(
-						'container'      => 'ul',
-						'menu_class'     => 'list-inline',
-						'theme_location' => 'secondary'
-					) );
-					?>
-					
-				</div>
-				
-				<div class="powered-by col-md-12">
-					<p><?php _e( 'Desarrollado con <span title="Amor">&#10084;</span> por el equipo Somos Uno.', 'junio' ); ?></p>
-					<span><a href="https://github.com/Somos-Uno/Junio" rel="nofollow" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
-				</div>
-			</div><!-- .row -->
+			<?php
+			wp_nav_menu( array(
+				'container'      => 'ul',
+				'menu_class'     => 'list-inline',
+				'theme_location' => 'secondary'
+			) );
+			?>
+			
+			<div class="powered-by">
+				<p><?php _e( 'Desarrollado con <span title="Amor">&#10084;</span> por el equipo Somos Uno.', 'junio' ); ?></p>
+				<span><a href="https://github.com/Somos-Uno/Junio" rel="nofollow" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
+			</div>
 		</div><!-- .container -->
 	</footer>
 

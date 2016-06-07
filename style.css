@@ -103,7 +103,7 @@ h1.single-title {
 }
 
 h1.page-title {
-	margin-top: 0;
+	/*margin-top: 0;*/
 }
 
 .entry-content h1,
@@ -429,4 +429,15 @@ h1.page-title {
 	    -ms-filter: initial;
 	     -o-filter: initial;
 	        filter: initial;
+}
+
+/** .breadcrumb */
+
+.breadcrumb {
+    border-radius: 0;
+    margin-top: -5px;
+    padding: 0;
+    background-color: transparent; 
+    font-size: 13px;
+    margin-bottom: 20px;
 }
