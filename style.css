@@ -92,7 +92,7 @@ a:focus {
 
 .navbar-junio .current-menu-item > a,
 .navbar-junio .current-menu-ancestor > a {
-	color: #0d3c55;
+	color: #2c3f50;
 	font-weight: 600;
 }
 
@@ -316,7 +316,7 @@ h1.page-title {
 }
 
 .partners h3 {
-	color: #0d3c55;
+	color: #2c3f50;
 	font-family: 'Cabin', Helvetica Neue, Sans-serif;
 	font-size: 32px;
 	font-weight: 600;

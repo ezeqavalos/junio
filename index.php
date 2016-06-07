@@ -29,7 +29,7 @@ get_header(); ?>
 	<hr />
 
 	<aside class="container partners">
-		<h3>Ellos se sumaron</h3>
+		<h3><?php _e( 'Ellos se sumaron', 'junio' ); ?></h3>
 		<ul class="list-inline">
 			<li><a href="http://www.isdel.com.ar/" rel="nofollow" target="blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/logo-2-300x91.png"></a></li>
 			<li><a href="https://www.facebook.com/ConsultoraGEM/?fref=ts" rel="nofollow" target="blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/logo-1-1-300x90.png"></a></li>

@@ -25,10 +25,14 @@
 	<div class="entry-content">
 
 		<?php
-		the_content( sprintf(
-			__( 'Sigue leyendo %s', 'junio' ),
-			the_title( '<span class="screen-reader-text">', '</span>', false )
-		) );
+		if ( is_single() ) :
+			the_content( sprintf(
+				__( 'Sigue leyendo %s', 'junio' ),
+				the_title( '<span class="screen-reader-text">', '</span>', false )
+			) );
+		else :
+			the_excerpt();
+		endif;
 		?>
 
 	</div><!-- .entry-content -->
