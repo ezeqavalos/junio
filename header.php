@@ -21,6 +21,7 @@
 	<link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/images/favicon.ico" type="image/x-icon">
 	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Cabin:400,600|Open+Sans:400,600'>
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/font-awesome.css">
 	<link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css">
 </head>
 
@@ -40,11 +41,11 @@
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</div><!-- .very-top-header -->
-
+		
 		<nav class="navbar navbar-junio" role="navigation">
-			<div class="container">
+			<div class="container cbp-af-inner">
 				<div class="navbar-header">
-					<h1 class="logo"><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .navbar-header -->
 
 				<div class="collapse navbar-collapse">

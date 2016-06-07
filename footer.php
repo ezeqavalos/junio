@@ -25,7 +25,8 @@
 				</div>
 				
 				<div class="powered-by col-md-12">
-					<p>Desarrollado con <span title="Amor">&#10084;</span> por el equipo Somos Uno.</p>
+					<p><?php _e( 'Desarrollado con <span title="Amor">&#10084;</span> por el equipo Somos Uno.', 'junio' ); ?></p>
+					<span><a href="https://github.com/Somos-Uno/Junio" rel="nofollow" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a></span>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->

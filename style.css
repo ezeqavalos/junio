@@ -14,7 +14,7 @@ Text Domain: junio
 html,
 body {
 	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
-	color: #666;
+	color: #333;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -30,13 +30,9 @@ body {
  * 6.1 Links
  */
 
-a {
-	color: #333;
-}
-
 a:hover,
 a:focus {
-	color: #f16c20;
+	color: #2c3f52;
 	text-decoration: none;
 	-webkit-transition: all 0.2s ease-in-out;
 	   -moz-transition: all 0.2s ease-in-out;
@@ -46,80 +42,12 @@ a:focus {
 }
 
 /**
- * 6.2 Menus
- */
-
-.navbar-junio {
-	border-radius: 0;
-	border: none;
-}
-.navbar-junio li a {
-	color: #313131;
-    text-transform: uppercase;
-	line-height: 18px;
-	margin: 26px 18px;
-	padding: 0;
-	font-size: 15px;
-	display: block;
-	position: relative;
-	text-decoration: none;
-}
-
-.navbar-junio li a:hover,
-.navbar-junio li a:focus,
-.navbar-junio li a:active {
-	background-color: transparent;
-	color: #f16c20;
-}
-
-.navbar-junio ul {
-	list-style: none;
-	margin: 0;
-}
-
-.navbar-junio ul ul {
-	display: none;
-	margin-left: 0.8em;
-}
-
-.navbar-junio ul .toggled-on {
-	display: block;
-}
-
-.navbar-junio li {
-	position: relative;
-}
-
-.navbar-junio .current-menu-item > a,
-.navbar-junio .current-menu-ancestor > a {
-	color: #2c3f50;
-	font-weight: 600;
-}
-
-.navbar-junio .nav > ul > li:first-child,
-.navbar-junio .nav > li:first-child {
-	border-top: 0;
-}
-
-.navbar-junio {
-    background-color: #fff;
-    border-color: #e7e7e7;
-    font-weight: 400;
-    -webkit-backface-visibility: hidden;
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-       -moz-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-        -ms-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-         -o-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
-}
-
-/**
  * Headings
  */
 
 h1,
 h2 {
-	color: #222;
+	color: #444;
 	font-family: 'Cabin', Helvetica Neue, Sans-serif;
 	font-weight: 400;
 }
@@ -185,7 +113,7 @@ h1.page-title {
 .entry-content h5 {
 	margin-top: 35px;
 	margin-bottom: 20px;
-	color: #000;
+	color: #222;
 }
 
 /**
@@ -195,6 +123,8 @@ h1.page-title {
 .header-junio {
 	margin-bottom: 20px;
 }
+
+/** .very-top-header */
 
 .very-top-header {
 	background-color: #0098DA;
@@ -216,7 +146,82 @@ h1.page-title {
 }
 
 .navbar-header h1 {
+	margin: 10px 0;
+}
+
+.navbar-header .navbar-brand {
+	font-size: 35px;
+}
+
+/** .navbar-junio */
+
+.navbar-junio {
+	border-radius: 0;
+	border: none;
+}
+.navbar-junio li a {
+	color: #000;
+    text-transform: uppercase;
+	line-height: 18px;
+	margin: 26px 18px;
+	padding: 0;
+	font-size: 15px;
+	font-weight: 400;
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+
+.navbar-junio li a:hover,
+.navbar-junio li a:focus,
+.navbar-junio li a:active {
+	background-color: transparent;
+	color: #337ab7;
+}
+
+.navbar-junio ul {
+	list-style: none;
 	margin: 0;
+}
+
+.navbar-junio ul ul {
+	display: none;
+	margin-left: 0.8em;
+}
+
+.navbar-junio ul .toggled-on {
+	display: block;
+}
+
+.navbar-junio li {
+	position: relative;
+}
+
+.navbar-junio .current-menu-item,
+.navbar-junio .current-menu-ancestor,
+.navbar-junio .current-menu-item > a,
+.navbar-junio .current-menu-ancestor > a,
+.navbar-junio .current-menu-item > a:hover,
+.navbar-junio .current-menu-ancestor > a:hover {
+	color: #888;
+	background-color: #f4f5f9;
+}
+
+.navbar-junio .nav > ul > li:first-child,
+.navbar-junio .nav > li:first-child {
+	border-top: 0;
+}
+
+.navbar-junio {
+    background-color: #fff;
+    border-bottom: 1px solid #f4f5f9;
+    font-weight: 400;
+    -webkit-backface-visibility: hidden;
+    /*-webkit-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+       -moz-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        -ms-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+         -o-box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);*/
 }
 
 /**
@@ -237,9 +242,9 @@ h1.page-title {
 
 .footer-junio {
 	background-color: #0d3c55;
-	border-top: 3px solid #e2e2e2;
+	border-top: 3px solid #e7e7e7;
 	padding-top: 40px;
-	padding-bottom: 35px;
+	padding-bottom: 20px;
 	height: auto;
 	width: auto;
 }
@@ -254,8 +259,7 @@ h1.page-title {
 }
 
 .footer-junio li a:hover {
-	color: #f16c20;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .footer-junio .powered-by {
@@ -269,6 +273,10 @@ h1.page-title {
 .footer-junio .powered-by p span {
 	color: #e74c3c;
 	font-size: 16px;
+}
+.footer-junio .powered-by span > a {
+	color: #ccc;
+	font-size: 18px;
 }
 
 /**
@@ -303,23 +311,93 @@ h1.page-title {
  * Inicio
  */
 
+/**
+ * .about-us
+ */
+
+.about-us {
+	margin-bottom: 60px;
+}
+
+.about-us .objectives {
+	background-color: #f4f5f9;
+	padding-top: 40px;
+}
+
+.about-us .objectives i {
+	font-size: 75px;
+}
+
+.about-us .objectives h3 {
+	text-transform: uppercase;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.about-us .objectives .heart,
+.about-us .objectives .share-alt,
+.about-us .objectives .users {
+	margin-bottom: 35px;
+}
+
+.about-us .objectives .heart i {
+	color: #e74c3c;
+}
+
+.about-us .objectives .share-alt i {
+	color: #75b859;
+}
+
+.about-us .objectives .users i {
+	color: #1d93e5;
+}
+
+.about-us .sumate {
+	background-color: #1bb999; /*#218bd5*/
+	color: #fff;
+	padding: 20px 0;
+	font-size: 24px;
+	line-height: 2em;
+}
+
+.about-us .sumate a,
+.about-us .sumate a:active {
+	border-radius: 5px;
+	border: 3px solid #eee;
+	margin-left: 20px;
+	font-size: 16px;
+	padding: 5px 15px;
+	font-weight: 600;
+	color: #fff;
+}
+.about-us .sumate a i {
+	margin-left: 5px;
+}
+
+.about-us .sumate a:focus,
+.about-us .sumate a:hover {
+	border: 3px solid #fff;
+	color: #1bb999;
+	background-color: #fff;
+}
+
 /** .articles */
 .articles {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 /** .Partners  */
 .partners {
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 	z-index: 1;
 	text-align: center;
 }
 
 .partners h3 {
-	color: #2c3f50;
+	color: #3e5773;
 	font-family: 'Cabin', Helvetica Neue, Sans-serif;
 	font-size: 32px;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 
