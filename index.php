@@ -11,7 +11,24 @@ get_header(); ?>
 		<div class="container">
 			<div class="row" style="margin-bottom: 60px;">
 				<div class="col-md-6">
-					<img src="http://somosuno.tk/ar/wp-content/uploads/2016/05/323232.jpg" alt="" class="img-responsive">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/01-m.jpg" width="600" height="400">
+							</div>
+							<div class="item">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/02-m.jpg" width="600" height="400">
+							</div>
+							<div class="item">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/03-m.jpg" width="600" height="400">
+							</div>
+						</div>
+					</div><!-- .carousel -->
 				</div>
 				<div class="col-md-6">
 					<h2>Red Solidaria</h2>
