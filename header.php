@@ -43,7 +43,7 @@
 		</div><!-- .very-top-header -->
 		
 		<nav class="navbar navbar-junio" role="navigation">
-			<div class="container cbp-af-inner">
+			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -54,7 +54,7 @@
 					<h1><a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .navbar-header -->
 
-				<div class="collapse navbar-collapse">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				
 					<?php
 					wp_nav_menu( array(
