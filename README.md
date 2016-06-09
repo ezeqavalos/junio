@@ -1,6 +1,9 @@
-# Junio
+## Junio
+
+> Tema para WordPress del la página principal de Somos Uno.
+
+### Captura de pantalla
 <img src="https://raw.githubusercontent.com/Somos-Uno/Junio/master/screenshot.png">
-> Captura de pantalla del tema para WordPress del la página web de Somos Uno.
 
 ### Instalación
 - [Descargar](https://github.com/Somos-Uno/Junio/archive/master.zip)
@@ -10,5 +13,5 @@
 ### Control de versiones
 Por la transparencia en nuestro ciclo de liberación y en el esfuerzo por mantener la compatibilidad con versiones anteriores, Junio se mantiene bajo las [directrices de versiones semánticos](http://semver.org/). A veces metemos la pata, pero vamos a adherir a estas normas siempre que sea posible.
 
-## Licencia
+### Licencia
 MIT
