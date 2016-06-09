@@ -9,7 +9,7 @@
 get_header(); ?>
 	<section class="about-us">
 		<div class="container">
-			<div class="row" style="margin-bottom: 60px;">
+			<div class="row">
 				<div class="col-md-6">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
