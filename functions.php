@@ -4,7 +4,7 @@ if ( ! function_exists( 'junio_setup' ) ) :
 /**
  * Configuración.
  * 
- * @since Junio 0.0
+ * @since Junio 1.0.0
  */
 function junio_setup() {
 
@@ -24,7 +24,7 @@ add_action( 'after_setup_theme', 'junio_setup' );
 /**
  * Register área de widget.
  *
- * @since Junio 0.0
+ * @since Junio 1.0.0
  *
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  */
@@ -45,14 +45,7 @@ add_action( 'widgets_init', 'junio_widgets_init' );
  * Crear un texto elemento de título con un formato agradable y más específica para la salida
  * en la cabeza del documento, basado en la vista actual.
  *
- * @since Junio 0.0
- *
- * @global int $paged WordPress archive pagination page count.
- * @global int $page  WordPress paginated post page count.
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * @return string The filtered title.
+ * @since Junio 1.0.0
  */
 function junio_wp_title( $title, $sep ) {
 	global $paged, $page;
@@ -83,7 +76,7 @@ if ( ! function_exists( 'junio_breadcrumb' ) ) :
 /**
  * Mostrar las migras de pan.
  *
- * @since Junio 0.0
+ * @since Junio 1.0.0
  */
 function junio_breadcrumb() {
 	$txtHome = 'Inicio';
@@ -120,7 +113,7 @@ if ( ! function_exists( 'junio_post_thumbnail' ) ) :
 /**
  * Mostrar un imagen en miniatura opcional.
  *
- * @since Junio 0.0
+ * @since Junio 1.0.0
  */
 function junio_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
@@ -142,6 +135,6 @@ function junio_post_thumbnail() {
 		?>
 	</a>
 
-	<?php endif; // En is_singular()
+	<?php endif;
 }
 endif;

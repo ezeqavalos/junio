@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Junio
- * @since Junio 0.0.0
+ * @since Junio 1.0.0
  */
 ?><!DOCTYPE html>
 <html lang="es-AR">

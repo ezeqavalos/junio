@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Junio
- * @since Junio 0.0
+ * @since Junio 1.0.0
  */
 
 if ( is_active_sidebar( 'sidebar-1' )  ) : ?>

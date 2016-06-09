@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Junio
- * @since Junio 0.0
+ * @since Junio 1.0.0
  */
 
 get_header(); ?>
