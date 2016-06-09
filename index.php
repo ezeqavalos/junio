@@ -19,13 +19,13 @@ get_header(); ?>
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/01-m.jpg" width="600" height="400">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/01-m.jpg">
 							</div>
 							<div class="item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/02-m.jpg" width="600" height="400">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/02-m.jpg">
 							</div>
 							<div class="item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/03-m.jpg" width="600" height="400">
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/03-m.jpg">
 							</div>
 						</div>
 					</div><!-- .carousel -->
