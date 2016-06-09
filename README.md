@@ -1,7 +1,7 @@
 # Junio
-
 > Tema para WordPress del la página principal de Somos Uno.
 
+## Captura de pantalla
 <img src="https://raw.githubusercontent.com/Somos-Uno/Junio/master/screenshot.png">
 
 ## Instalación
