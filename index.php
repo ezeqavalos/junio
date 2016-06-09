@@ -66,20 +66,41 @@ get_header(); ?>
 	</section><!-- .about-us-->
 	
 	<section class="container articles">
-		<main class="row" role="main">
-			<div class="col-md-12">
-			<?php if ( have_posts() ) : ?>
-
-				<?php
-				while ( have_posts() ) : the_post();
-
-					get_template_part( 'content', get_post_format() );
-
-				endwhile;
-
-			endif;
+		<main role="main">
+		<?php if ( have_posts() ) : ?>
+			<h2><?php _e( 'Últimas noticias', 'junio' ); ?></h2>
+			<?php
+			while ( have_posts() ) : the_post();
 			?>
-			</div>
+			<article class="row">
+				<div class="col-md-2">
+					<?php if ( has_post_thumbnail() ) : ?>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark">
+					<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive img-circle', 'alt' => get_the_title() ) ); ?>
+					</a>
+					<?php endif; ?>
+				</div>
+				<div class="col-md-10">
+					<?php the_title( sprintf( '<h3><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' ); ?>
+					<?php
+					$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+					$time_string = sprintf( $time_string,
+						esc_attr( get_the_date( 'c' ) ),
+						get_the_date(),
+						esc_attr( get_the_modified_date( 'c' ) ),
+						get_the_modified_date()
+					);
+
+					printf( '<em>%1$s</em>', $time_string);
+					?>
+					<p><?php the_excerpt(); ?></p>
+				</div>
+			</article>
+			<?php
+			endwhile;
+
+		endif;
+		?>
 		</main>
 	</section><!-- .articles -->
 

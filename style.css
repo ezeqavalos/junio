@@ -367,7 +367,21 @@ h1.page-title {
 
 /** .articles */
 .articles {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
+}
+
+.articles h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.articles img {
+	border: 5px solid #eee;
+	margin-top: 5px;
+}
+
+.articles .row {
+	margin-bottom: 30px;
 }
 
 /** .Partners  */

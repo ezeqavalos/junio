@@ -8,6 +8,9 @@ if ( ! function_exists( 'junio_setup' ) ) :
  */
 function junio_setup() {
 
+	// Activar el soporte a las imagenes miniaturas en entradas y páginas.
+	add_theme_support( 'post-thumbnails' );
+
 	// Este tema utiliza wp_nav_menu() en dos lugares.
 	register_nav_menus( array(
 		'primary'   => __( 'Menú primario de la cabecera', 'junio' ),
@@ -76,8 +79,13 @@ function junio_wp_title( $title, $sep ) {
 }
 add_filter( 'wp_title', 'junio_wp_title', 10, 2 );
 
-
-function the_breadcrumb() {
+if ( ! function_exists( 'junio_breadcrumb' ) ) :
+/**
+ * Mostrar las migras de pan.
+ *
+ * @since Junio 0.0
+ */
+function junio_breadcrumb() {
 	$txtHome = 'Inicio';
 
 	if (is_home() || is_404() || !have_posts())
@@ -88,7 +96,6 @@ function the_breadcrumb() {
 			echo '<li><a href="';
 			echo get_option('home');
 			echo '">';
-			/*echo '<span class="glyphicon glyphicon-home" aria-hidden="true"></span>';*/
 			echo ' '.$txtHome;
 			echo "</a></li>";
 			if (is_category() || is_single()) {
@@ -107,3 +114,34 @@ function the_breadcrumb() {
 	}
 	echo '</ol>';
 }
+endif;
+
+if ( ! function_exists( 'junio_post_thumbnail' ) ) :
+/**
+ * Mostrar un imagen en miniatura opcional.
+ *
+ * @since Junio 0.0
+ */
+function junio_post_thumbnail() {
+	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+		return;
+	}
+
+	if ( is_singular() ) :
+	?>
+
+	<div class="post-thumbnail">
+		<?php the_post_thumbnail( 'large', array( 'class' => 'img-responsive', 'alt' => get_the_title() ) ); ?>
+	</div><!-- .post-thumbnail -->
+
+	<?php else : ?>
+
+	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+		<?php
+			the_post_thumbnail( 'post-thumbnail', array( 'class' => 'img-responsive', 'alt' => get_the_title() ) );
+		?>
+	</a>
+
+	<?php endif; // En is_singular()
+}
+endif;

@@ -10,6 +10,8 @@
 
 <article id="post-<?php the_ID(); ?>">
 
+	<?php junio_post_thumbnail(); ?>
+
 	<header class="entry-header">
 
 		<?php

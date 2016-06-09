@@ -75,6 +75,6 @@
 	if (!is_home()) :
 	?>
 	<div class="container">
-	<?php the_breadcrumb(); ?>
+	<?php junio_breadcrumb(); ?>
 	</div>
 	<?php endif; ?>
