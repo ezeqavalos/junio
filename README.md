@@ -6,7 +6,7 @@
 <img src="https://raw.githubusercontent.com/Somos-Uno/Junio/master/screenshot.png">
 
 ## Instalación
-- [Descargar](https://github.com/Somos-Uno/Junio/archive/master.zip)
+- [Descargar](https://github.com/Somos-Uno/Junio/archive/v1.0.0.zip)
 - Extraer el ZIP en /wp-content/themes.
 - Activar el tema a través del panel de administración.
 
