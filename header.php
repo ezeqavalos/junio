@@ -36,7 +36,7 @@
 					</div>
 
 					<div class="col-md-3 text-right">
-						<a href="https://www.facebook.com/redsomosuno" rel="new-window" target="_blank"><?php _e( 'Síganos en Facebook', 'junio' ); ?> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
+						<a href="<?php echo esc_url( 'https://www.facebook.com/redsomosuno' ); ?>" rel="new-window" target="_blank"><?php _e( 'Síganos en Facebook', 'junio' ); ?> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
 					</div>
 				</div><!-- .row -->
 			</div><!-- .container -->
