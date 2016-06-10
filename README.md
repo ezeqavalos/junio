@@ -16,12 +16,5 @@ Por la transparencia en nuestro ciclo de liberación y en el esfuerzo por manten
 ## Peticiones de características
 Si encuentra que el tema "Junio" no contiene una característica particular y crees que sería útil, por favor, compruebe en el historial si ya lo han solicitado. Si no, puede solicitar una [nueva característica](https://github.com/Somos-Uno/Junio/issues/new).
 
-## Versiones
-### 1.1.0
-- Nuevo color de fondo en la sección "sumate".
-
-### 1.0.0
-- Caracteristicas iniciales.
-
 ## Licencia
 [MIT](https://opensource.org/licenses/MIT)
