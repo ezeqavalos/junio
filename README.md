@@ -17,4 +17,4 @@ Por la transparencia en nuestro ciclo de liberación y en el esfuerzo por manten
 Si encuentra que el tema "Junio" no contiene una característica particular y crees que sería útil, por favor, compruebe en el historial si ya lo han solicitado. Si no, puede solicitar una [nueva característica](https://github.com/Somos-Uno/Junio/issues/new).
 
 ## Licencia
-MIT
+[MIT](https://opensource.org/licenses/MIT)
