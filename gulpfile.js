@@ -1,10 +1,10 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp    = require('gulp'),
+	plugins = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
 
 	gulp.src('./css/*.scss')
-		.pipe(sass())
+		.pipe(plugins.sass())
 		.pipe(gulp.dest('./'));
 });
 
