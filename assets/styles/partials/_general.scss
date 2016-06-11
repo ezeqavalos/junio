@@ -1,0 +1,131 @@
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+html,
+body {
+	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+	color: #333;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+	color: #069bdb;
+
+	&:hover,
+	&:focus {
+		color: #2c3f52;
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+	}
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2 {
+	color: #444;
+	font-family: 'Cabin', Helvetica Neue, Sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 40px;
+	word-wrap: break-word;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 34px;
+	word-wrap: break-word;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 28px;
+	word-wrap: break-word;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 18px;
+	word-wrap: break-word;
+}
+
+h1.intro {
+    font-size: 3.75rem;
+    line-height: 5rem;
+    text-align: center;
+    background: #0A6F9A;
+}
+
+h1.single-title {
+	font-size: 24px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #000;
+	margin-top: 0;
+}
+
+h1.page-title {
+	/*margin-top: 0;*/
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5 {
+	margin-top: 35px;
+	margin-bottom: 20px;
+	color: #222;
+}
+
+/**
+ * .entry-*
+ */
+.entry-content,
+.entry-content p,
+.entry-content span {
+	font-weight: 400;
+	color: #444;
+	font-size: 17px;
+	line-height: 26px;
+}
+
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}

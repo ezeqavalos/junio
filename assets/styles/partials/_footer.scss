@@ -1,0 +1,41 @@
+.footer-junio {
+	background-color: #0d3c55;
+	border-top: 3px solid #e7e7e7;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	height: auto;
+	width: auto;
+	
+	li {
+		margin-left: 20px;
+		margin-bottom: 20px;
+		
+		a {
+			color: #fff;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.powered-by {
+		margin-top: 15px;
+
+		p {
+			color: #DBDBDB;
+			font-size: 13px;
+
+			span {
+				color: #e74c3c;
+				font-size: 16px;
+			}
+		}
+
+		a {
+			color: #ccc;
+			font-size: 18px;
+		}
+	}
+}

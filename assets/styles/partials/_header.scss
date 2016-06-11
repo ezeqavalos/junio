@@ -1,0 +1,86 @@
+.header-junio {
+	margin-bottom: 20px;
+}
+
+.very-top-header {
+	background-color: #069bdb;
+	color: #fff;
+	padding-top: 10px;
+	font-size: 17px;
+
+	p em {
+		font-size: 22px;
+		margin-top: -4px;
+		margin-left: 5px;
+		position: absolute;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.navbar-junio {
+	background-color: #fff;
+	border-radius: 0;
+	border: none;
+    border-bottom: 1px solid #f4f5f9;
+    font-weight: 400;
+
+    h1 {
+		margin: 0;
+	}
+
+	ul {
+		list-style: none;
+
+		ul {
+			display: none;
+			margin-left: 0.8em;
+		}
+
+		.toggled-on {
+			display: block;
+		}
+	}
+
+	li {
+		position: relative;
+	}
+
+	li a {
+		color: #000;
+	    text-transform: uppercase;
+		line-height: 18px;
+		margin: 26px 18px;
+		padding: 0;
+		font-size: 15px;
+		font-weight: 400;
+		display: block;
+		position: relative;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&active {
+			background-color: transparent;
+			color: #069bdb;
+		}
+	}
+
+	.current-menu-item,
+	.current-menu-ancestor,
+	.current-menu-item > a,
+	.current-menu-ancestor > a,
+	.current-menu-item > a:hover,
+	.current-menu-ancestor > a:hover {
+		color: #888;
+		background-color: #f4f5f9;
+	}
+
+	.nav > ul > li:first-child,
+	.navbar-junio .nav > li:first-child {
+		border-top: 0;
+	}
+}
