@@ -13,4 +13,12 @@ gulp.task('styles', function () {
 		.pipe(plugins.notify({ message: 'Styles tarea completa' }));
 });
 
-gulp.task('default', ['styles']); 
+// Reducir la calidad de las imagenes
+gulp.task('images', function () {
+	return gulp.src('assets/images/**/*.{png,jpg,gif,ico}')
+	.pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 7, progressive: true, interlaced: true })))
+	.pipe(gulp.dest('./images'))
+	.pipe(plugins.notify({ message: 'Images tarea completa' }));
+});
+
+gulp.task('default', ['styles', 'images']); 
