@@ -21,4 +21,15 @@ gulp.task('images', function () {
 	.pipe(plugins.notify({ message: 'Images tarea completa' }));
 });
 
-gulp.task('default', ['styles', 'images']); 
+// Watch
+gulp.task('watch', function () {
+
+	// Watch .scss files
+	gulp.watch('./assets/styles/**/*.scss', ['styles']);
+
+	// Watch image files
+	gulp.watch('assets/images/**/*', ['images']);
+
+});
+
+gulp.task('default', ['styles', 'images', 'watch']); 
