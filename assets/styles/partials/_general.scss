@@ -18,11 +18,11 @@ body {
    ========================================================================== */
 
 a {
-	color: #069bdb;
+	color: $link;
 
 	&:hover,
 	&:focus {
-		color: #2c3f52;
+		color: $link-hover;
 		text-decoration: none;
 		transition: all 0.2s ease-in-out;
 	}

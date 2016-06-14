@@ -7,9 +7,13 @@ Description: Un tema elgante y limpio para la página web.
 Version: 1.0.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
-Tags: black, blue, gray, white, yellow, light, two-columns, left-sidebar, fixed-layout, responsive-layout.
+Tags: black, blue, gray, white, light, two-columns, left-sidebar, fixed-layout, responsive-layout.
 Text Domain: junio
 */
+
+// Reset, Variables, Mixins, ...
+// NO EDITE ORDEN DE LOS ARCHIVOS
+@import "partials/variables";
 
 // Globals
 @import "partials/general";

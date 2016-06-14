@@ -6,8 +6,22 @@ gulp.task('styles', function () {
 
 	gulp.src('./assets/styles/**/*.scss')
 		.pipe(plugins.sass({ style: 'expanded', compass: true }))
-		.pipe(plugins.autoprefixer({ browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4'] }))
 		.pipe(gulp.dest('./assets/styles/build'))
+		.pipe(plugins.autoprefixer({
+			browsers: [
+				'> 1%',
+				'last 2 versions',
+				'firefox >= 4',
+				'safari 7',
+				'safari 8',
+				'IE 8',
+				'IE 9',
+				'IE 10',
+				'IE 11'
+			],
+			cascade: false
+            })
+		)
 		.pipe(plugins.minifyCss({ keepSpecialComments: 1 }))
 		.pipe(gulp.dest('./'))
 		.pipe(plugins.notify({ message: 'Styles tarea completa' }));
