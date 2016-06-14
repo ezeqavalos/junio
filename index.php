@@ -109,11 +109,11 @@ get_header(); ?>
 	<aside class="container partners">
 		<h2><?php _e( 'Ellos se sumaron', 'junio' ); ?></h2>
 		<ul class="list-inline">
-			<li><a href="http://www.isdel.com.ar/" rel="nofollow" target="_blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/logo-2-300x91.png"></a></li>
-			<li><a href="https://www.facebook.com/ConsultoraGEM/?fref=ts" rel="nofollow" target="_blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/logo-1-1-300x90.png"></a></li>
-			<li><a href="https://www.facebook.com/cliik.informatica/?fref=ts" rel="nofollow" target="_blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/12439392_986543351425104_6067708240625994156_n-300x300.png"></a></li>
-			<li><a href="https://www.facebook.com/ConsultoraGEM/?fref=ts" rel="nofollow" target="_blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/554477_109140542599175_727973376_n-300x75.jpg"></a></li>
-			<li><a href="https://www.facebook.com/Club-de-Leones-de-Barranqueras-Rossi-de-Fazio-446604272028421/?fref=ts" rel="nofollow" target="_blank"><img src="http://somosuno.tk/ar/wp-content/uploads/2016/04/255271_446604328695082_421214107_n-300x281.jpg"></a></li>
+			<li><a href="http://www.isdel.com.ar/" rel="nofollow" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/partners/logo-2-300x91.png"></a></li>
+			<li><a href="https://www.facebook.com/ConsultoraGEM" rel="nofollow" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/partners/logo-1-1-300x90.png"></a></li>
+			<li><a href="https://www.facebook.com/cliik.informatica/" rel="nofollow" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/partners/12439392_986543351425104_6067708240625994156_n-300x300.png"></a></li>
+			<li><a href="https://www.facebook.com/ConsultoraGEM/" rel="nofollow" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/partners/554477_109140542599175_727973376_n-300x75.jpg"></a></li>
+			<li><a href="https://www.facebook.com/Club-de-Leones-de-Barranqueras-Rossi-de-Fazio-446604272028421/" rel="nofollow" target="_blank"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/partners/255271_446604328695082_421214107_n-300x281.jpg"></a></li>
 		</ul>
 	</aside><!-- .partners -->
 	
