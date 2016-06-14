@@ -9,6 +9,7 @@ gulp.task('styles', function () {
 		.pipe(plugins.autoprefixer({ browsers: ['last 2 versions', 'ie 9', 'ios 6', 'android 4'] }))
 		.pipe(gulp.dest('./assets/styles/build'))
 		.pipe(plugins.minifyCss({ keepSpecialComments: 1 }))
+		.pipe(plugins.livereload(server))
 		.pipe(gulp.dest('./'))
 		.pipe(plugins.notify({ message: 'Styles tarea completa' }));
 });
@@ -17,17 +18,18 @@ gulp.task('styles', function () {
 gulp.task('images', function () {
 	return gulp.src('assets/images/**/*.{png,jpg,gif,ico}')
 	.pipe(plugins.cache(plugins.imagemin({ optimizationLevel: 7, progressive: true, interlaced: true })))
+	.pipe(plugins.livereload(server))
 	.pipe(gulp.dest('./images'))
 	.pipe(plugins.notify({ message: 'Images tarea completa' }));
 });
 
-// Watch
+// Monitorear los cambios de los .scss y las imagenes
 gulp.task('watch', function () {
 
-	// Watch .scss files
+	// Watch .scss
 	gulp.watch('./assets/styles/**/*.scss', ['styles']);
 
-	// Watch image files
+	// Watch images
 	gulp.watch('assets/images/**/*', ['images']);
 
 });
