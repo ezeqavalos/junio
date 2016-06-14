@@ -112,11 +112,11 @@
 			max-height: 40px;
 			opacity: 0.6;
 			filter: grayscale(1);
-		}
 
-		&:hover {
-			opacity: 1;
-			filter: initial;
+			&:hover {
+				opacity: 1;
+				filter: initial;
+			}
 		}
 	}
 }
