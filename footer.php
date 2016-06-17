@@ -29,6 +29,7 @@
 
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/jquery-1.12.4.js"></script>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/bootstrap.js"></script>
+	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
 
 </body>
 </html>

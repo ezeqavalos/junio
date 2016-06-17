@@ -4,7 +4,7 @@
 
 html,
 body {
-	font-family: 'Open Sans', Helvetica Neue, Sans-serif;
+	font-family: $font-dos;
 	color: #333;
 	height: 100%;
 	margin: 0;
@@ -34,8 +34,8 @@ a {
 
 h1,
 h2 {
-	color: #444;
-	font-family: 'Cabin', Helvetica Neue, Sans-serif;
+	color: #3c4146;
+	font-family: $font-uno;
 	font-weight: 400;
 }
 
@@ -119,11 +119,13 @@ h1.page-title {
 	float: left;
 	margin-right: 1.5em;
 }
+
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
+
 .aligncenter {
 	clear: both;
 	display: block;

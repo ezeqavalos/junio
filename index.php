@@ -7,38 +7,33 @@
  * @since Junio 1.0.0
  */
 get_header(); ?>
-	<section class="about-us">
+	
+	<div class="jumbotron jumbotron-home jumbotron-inverse">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/01-m.jpg">
-							</div>
-							<div class="item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/02-m.jpg">
-							</div>
-							<div class="item">
-								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/03-m.jpg">
-							</div>
-						</div>
-					</div><!-- .carousel -->
-				</div>
-				<div class="col-md-6">
-					<h2>Red Solidaria</h2>
-					<p class="lead">Somos Uno es una organización sin fines de lucro integrada por jóvenes estudiantes y trabajadores que mediante el trabajo voluntariado busca llevar ayuda a los sectores vulnerables mediante acciones concretas que permitan mejorar su calidad de vida. Creemos que si todos aportamos un poco de nuestro tiempo, conocimientos, y/o voluntad podemos mejorar el mundo en cual vivimos.</p>
+				<div class="homepage-hero-intro text-center col-md-6 col-md-offset-3">
+					<!--<h1 class="jumbotron-title">Red Solidaria</h1>
+					<p class="display-intro lead">Somos Uno es una organización sin fines de lucro integrada por jóvenes estudiantes y trabajadores que mediante el trabajo voluntariado busca llevar ayuda a los sectores vulnerables mediante acciones concretas que permitan mejorar su calidad de vida.</p>-->
 				</div>
 			</div>
 		</div>
+	</div><!-- .jumbotron -->
+
+	<div class="intro container">
+		<div class="row">
+			<div class="col-md-2 text-right">
+				<h2>Red Solidaria</h2>
+			</div>
+			<div class="col-md-10">
+				<p>Somos Uno es una organización sin fines de lucro integrada por jóvenes estudiantes y trabajadores que mediante el trabajo voluntariado busca llevar ayuda a los sectores vulnerables mediante acciones concretas que permitan mejorar su calidad de vida.</p>
+			</div>
+		</div><!-- .row -->
+	</div><!-- .container -->
+
+	<section class="about-us">
 		<div class="objectives">
 			<div class="container">
-				<div class="row text-center" role="main">
+				<div class="row text-center">
 					<div class="col-md-4 heart">
 						<i class="fa fa-heart" aria-hidden="true"></i>
 						<h3><?php _e( 'Voluntariado', 'junio' ); ?></h3>
@@ -57,12 +52,6 @@ get_header(); ?>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</div><!-- .objectives -->
-		
-		<div class="sumate text-center">
-			<div class="container">
-				<span>Actualmente somos más de <strong>50</strong> voluntarios. <em><?php _e( '¿Quieres formar parte?', 'junio' ); ?></em> <a href="http://bit.ly/SumateComoVoluntario" target="_blank">Sumate <i class="fa fa-arrow-right" aria-hidden="true"></i></a></span>
-			</div><!-- .container -->
-		</div><!-- .sumate -->
 	</section><!-- .about-us-->
 	
 	<section class="container articles">

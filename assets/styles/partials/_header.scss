@@ -55,7 +55,7 @@
 		line-height: 18px;
 		margin: 26px 18px;
 		padding: 0;
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: 400;
 		display: block;
 		position: relative;
@@ -75,8 +75,7 @@
 	.current-menu-ancestor > a,
 	.current-menu-item > a:hover,
 	.current-menu-ancestor > a:hover {
-		color: #888;
-		background-color: #f4f5f9;
+		color: #777;
 	}
 
 	.nav > ul > li:first-child,
@@ -84,3 +83,4 @@
 		border-top: 0;
 	}
 }
+
